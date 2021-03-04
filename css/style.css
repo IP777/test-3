@@ -23,18 +23,18 @@
 .japan > .red_dot {
 	width: 120px;
 	height: 120px;
-	background: red;
+	background: #bc002d;
 	border-radius: 50%;
 }
 
 .iceland {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: crimson;
+	background-color: #dc1e35;
 }
 
 .iceland > .squad {
-	background-color: blue;
+	background-color: #02529c;
 	border-color: #fff;
 }
 
@@ -73,6 +73,6 @@
 
 .czech > .all_flag {
 	border-top: 100px solid #fff;
-	border-bottom: 100px solid red;
-	border-left: 120px solid blue;
+	border-bottom: 100px solid #d7141a;
+	border-left: 120px solid #11457e;
 }
