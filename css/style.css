@@ -1,0 +1,35 @@
+h1 {
+	text-align: center;
+}
+
+.list {
+	list-style-type: none;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: beige;
+	display: grid;
+	grid-template-columns: repeat(1, minmax(200px, 1fr));
+	grid-gap: 1rem;
+	margin-bottom: 50px;
+}
+
+.item {
+	background-color: cornflowerblue;
+}
+
+.item > img {
+	width: 100%;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.list {
+		grid-template-columns: repeat(2, minmax(200px, 1fr));
+	}
+}
+
+@media (min-width: 900px) {
+	.list {
+		grid-template-columns: repeat(4, minmax(200px, 1fr));
+	}
+}
