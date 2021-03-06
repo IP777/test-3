@@ -10,49 +10,93 @@
 	</head>
 	<body>
 		<h2>Test - 2 grid image</h2>
-		<h2>Date ДД.ММ.ГГГГ Pictures counter</h2>
+		<h2 id="date">Date ДД.ММ.ГГГГ Time ЧЧ:ММ Pictures counter</h2>
 		<ul class="list">
-			<li class="item">
-				<img src="./img/1.jpg" alt="" class="img" />
+			<li id="0" class="item_wrapper">
+				<div class="item">
+					<img src="./img/1.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/2.jpg" alt="" class="img" />
+			<li id="1" class="item_wrapper">
+				<div class="item">
+					<img src="./img/2.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/3.jpg" alt="" class="img" />
+			<li id="2" class="item_wrapper">
+				<div class="item">
+					<img src="./img/3.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/4.jpg" alt="img" class="img" />
+			<li id="3" class="item_wrapper">
+				<div class="item">
+					<img src="./img/4.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/5.jpg" alt="img" class="img" />
+			<li id="4" class="item_wrapper">
+				<div class="item">
+					<img src="./img/5.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/6.jpg" alt="img" class="img" />
+			<li id="5" class="item_wrapper">
+				<div class="item">
+					<img src="./img/6.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/7.jpg" alt="img" class="img" />
+			<li id="6" class="item_wrapper">
+				<div class="item">
+					<img src="./img/7.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/8.jpg" alt="img" class="img" />
+			<li id="7" class="item_wrapper">
+				<div class="item">
+					<img src="./img/8.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/9.jpg" alt="img" class="img" />
+			<li id="8" class="item_wrapper">
+				<div class="item">
+					<img src="./img/9.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/10.jpg" alt="img" class="img" />
+			<li id="9" class="item_wrapper">
+				<div class="item">
+					<img src="./img/10.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/11.jpg" alt="img" class="img" />
+			<li id="10" class="item_wrapper">
+				<div class="item">
+					<img src="./img/11.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
-			<li class="item">
-				<img src="./img/12.jpg" alt="img" class="img" />
+			<li id="11" class="item_wrapper">
+				<div class="item">
+					<img src="./img/12.jpg" alt="" class="img" />
+				</div>
+				<input type="button" value="X" class="delCardBtn" />
 			</li>
 		</ul>
 
-		<div class="modal">
+		<input
+			type="button"
+			id="reloadBtn"
+			class="reload"
+			value="Восстановить"
+		/>
+
+		<div class="modal" id="modal">
 			<div class="background">
 				<div class="img_wrapper">
+					<input type="button" value="X" id="close_Btn" />
 					<img src="./img/12.jpg" alt="img" class="modal_img" />
 				</div>
 			</div>
