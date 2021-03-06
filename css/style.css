@@ -1,4 +1,6 @@
-h1 {
+h1,
+h2,
+h3 {
 	text-align: center;
 }
 
@@ -34,6 +36,23 @@ h1 {
 
 .item > img {
 	height: 100%;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+}
+
+.modal > .background {
+	width: inherit;
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0.705);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (min-width: 500px) and (max-width: 899px) {
