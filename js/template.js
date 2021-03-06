@@ -8,11 +8,11 @@ export const conrtyTemplate = (
 	`
 <tr>
     <td>${number + 1}</td>
-    <td>${web_pages}</td>
+    <td><a href="${web_pages}" target="_blank">${web_pages}</a></td>
     <td>${name}</td>
     <td>${country}</td>
     <td>${alpha_two_code}</td>
-    <td><input id='${number}' type="checkbox" class='checkBox' /></td>
+    <td><input id='${name}' type="checkbox" class='checkBox' /></td>
 </tr>
 `;
 

@@ -1,6 +1,12 @@
 import refs from "./refs.js";
 import { getCountryApi } from "./api.js";
 import { conrtyTemplate, delaultTemplate } from "./template.js";
+import {
+	clearStorage,
+	getAllStorage,
+	removeFromStorage,
+	addToStorage,
+} from "./storage.js";
 
 export const sendHandler = async () => {
 	refs.getTable.innerHTML = delaultTemplate();
@@ -27,35 +33,24 @@ export const sendHandler = async () => {
 export const resetHandelbars = () => {
 	refs.getTable.innerHTML = "";
 	refs.getTextArea.value = "";
-
-	// console.log(JSON.parse({
-	//      [{"number":"1","web_pages":"http://www.academy.sumy.ua/","name":"Ukrainian Academy of Banking","country":"Ukraine","alpha_two_code":"UA"}]}))
+	clearStorage();
 };
 
 export const checkboxHandler = (e) => {
 	if (e.target.tagName === "INPUT") {
 		if (e.target.checked) {
 			const parent = e.target.parentElement.parentElement.childNodes;
-			const countryObj = JSON.stringify({
+			const countryObj = {
 				number: parent[1].innerHTML,
-				web_pages: parent[3].innerHTML,
+				web_pages: parent[3].firstChild.innerHTML,
 				name: parent[5].innerHTML,
 				country: parent[7].innerHTML,
 				alpha_two_code: parent[9].innerHTML,
-			});
+			};
 
-			if (localStorage.countyArray) {
-				localStorage.setItem("countyArray", [
-					localStorage.countyArray,
-					countryObj,
-				]);
-			} else {
-				localStorage.setItem("countyArray", countryObj);
-			}
-
-			// console.log(JSON.stringify(countryObj));
+			addToStorage(countryObj);
 		} else {
-			console.log(JSON.parse(localStorage.countyArray));
+			removeFromStorage(e.target.id);
 		}
 	}
 };

@@ -1,0 +1,34 @@
+[
+	{
+		"web_pages": ["http://www.academy.sumy.ua/"],
+		"name": "Ukrainian Academy of Banking",
+		"domains": ["academy.sumy.ua"],
+		"alpha_two_code": "UA",
+		"country": "Ukraine",
+		"state-province": null
+	},
+	{
+		"web_pages": ["http://www.arosmu.org/"],
+		"name": "Odessa State Medical University",
+		"domains": ["arosmu.org"],
+		"alpha_two_code": "UA",
+		"country": "Ukraine",
+		"state-province": null
+	},
+	{
+		"web_pages": ["http://www.btsau.kiev.ua/"],
+		"name": "Bila Cerkva State Agrarian University",
+		"domains": ["btsau.kiev.ua"],
+		"alpha_two_code": "UA",
+		"country": "Ukraine",
+		"state-province": null
+	},
+	{
+		"web_pages": ["http://www.chnu.cv.ua/"],
+		"name": "Chernivci National University",
+		"domains": ["chnu.cv.ua"],
+		"alpha_two_code": "UA",
+		"country": "Ukraine",
+		"state-province": null
+	}
+]

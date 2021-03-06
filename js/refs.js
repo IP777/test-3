@@ -3,4 +3,5 @@ export default {
 	getSendBtn: document.querySelector(".serchBtn"),
 	getResetBtn: document.querySelector(".resetBtn"),
 	getTable: document.querySelector(".table"),
+	getCounter: document.querySelector(".couterChck"),
 };
