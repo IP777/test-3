@@ -1,0 +1,32 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.search {
+	height: 45px;
+	background-color: lightskyblue;
+	padding: 3px;
+	font-weight: 400;
+}
+
+.text_area {
+	width: 80%;
+	font-size: 18px;
+	padding: 8px;
+}
+
+.btn {
+	font-size: 18px;
+	padding: 8px;
+}
+
+table {
+	width: 100%;
+	visibility: hidden;
+	margin-bottom: 50px;
+}
+
+td {
+	border: 1px solid #000;
+}
